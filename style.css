@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Montserrat';
+}
+
+.background-introducao{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/fundo_introducao.png');
+}
+.section-introducao{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.introducao-container{
+    padding-left: 10rem;
+    width: 50vw;
+}
+
+.section-introducao img{
+    width: 40vw;
+}
+
+.section-introducao .introducao-subtext{
+    color: #748494;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section-introducao .introducao-subtext .bottom-line{
+    display: inline-block;
+    width: 80px;
+    background-image: linear-gradient(90deg, #2B4865, #002B5B);
+    height: 2px;
+    margin-top: 25px;
+}
+
+.section-introducao .introducao-title{
+    font-size: 42px;
+    font-weight: 600;
+    color: #212529;
+    max-width: 23ch;
+}
+
+.section-introducao .introducao-subtitle{
+    font-size: 22px;
+    color: #748494;
+    max-width: 40ch;
+}
+
+.section-introducao .introducao-buttons{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    padding: 15px;
+}
+
+.section-introducao .introducao-buttons button{
+    border: none;
+    border-radius: 28px;
+    width: 170px;
+    height: 54px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.section-introducao .introducao-buttons button:hover{
+    transform: scale(1.02);
+ }
+
+.section-introducao .introducao-buttons  #btn-start{
+    background-image: linear-gradient(90deg, #2B4865, #002B5B);
+    color: white;
+    font-weight: 600;
+    
+}
+
+.section-introducao .introducao-buttons  #btn-learn{
+    background-color: white;
+    color: #2B4865;
+    border: 2px solid #2B4865;
+    font-weight: 600;
+}
+
+.section-2{
+    width: 100vw;
+    height: 100vh;
+    background-color: #F3F5FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/vetorsection2.svg');
+}
+
+.container-section2,
+.container-section-product {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container-section2 img {
+    width: 50%;
+}
+
+.section-2-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 30vw;
+    padding: 10px;
+}
+
+.section-2-content button{
+    max-width: fit-content;
+    padding: 14px 44px 14px 44px;
+    border: none;
+    border-radius: 28px;
+    color: white;
+    background-image: linear-gradient(90deg, #2B4865, #002B5B);
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s
+}
+
+.section-2-content button:hover{
+    transform: scale(1.02);
+}
+
+.section-2-title{
+    font-size: 28px;
+    color: black;
+    font-weight: 600;
+}
+
+.section-2-text{
+    color: black;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.section-integrantes{
+    padding-top: 5vh;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.integrantes-informacao{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 30%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.integrantes-informacao h2{
+    width: 100%;
+    text-align: center;
+    font-size: 28px
+}
+.container-integrantes-column{
+
+    /* border: 1px rgb(222, 43, 43) solid; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 20px;
+    width: 70vw;
+    height: 70vh;
+}
+
+.container-integrantes-row{
+    /* border: 1px rgb(8, 158, 33) solid; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: row;
+    height: 40%;
+    padding: 10px;
+}
+
+.div-integrante{
+    /* border: 1px black solid; */
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.div-integrante img{
+    width: 60%;
+}
+
+.nome-integrante{
+    font-size: 20px;
+}
+
+.section-product{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(90deg, #19426b, #002B5B);
+    background-color: aqua;
+}
+
+.container-section-product{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-section-product img {
+    width: 30vw;
+}
+
+.section-product-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 5px;
+    max-width: 70ch;
+}
+
+.section-product-content button{
+    max-width: fit-content;
+    padding: 14px 44px 14px 44px;
+    border: none;
+    border-radius: 28px;
+    color: #2B4865;
+    background-image: linear-gradient(90deg, #F0B86E, #A280EC);
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s
+}
+
+.section-product-content button:hover{
+    transform: scale(1.02);
+}
+
+.section-product-title{
+    padding-top: 5rem;
+    font-size: 46px;
+    color: white;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.section-product-text{
+    color: white;
+    font-size: 22px;
+    font-weight: 550;
+    font-family: 'Hammersmith One', sans-serif;
+}
