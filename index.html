@@ -14,7 +14,7 @@
     <main id="index">
 
         
-            <section class="section-introducao">
+            <section id="introducao" class="section-introducao">
                 <div class="introducao-container">
                     <div class="introducao-subtext">Tecnologia, inovação e saúde
                         <span class="bottom-line"></span>
@@ -27,8 +27,8 @@
                     </div>
     
                     <div class="introducao-buttons">
-                        <button id="btn-start">Principal case</button>
-                        <button id="btn-learn">Saiba mais</button>
+                        <button id="btn-start" onclick="irSectionCase()">Principal case</button>
+                        <button id="btn-learn" onclick="irSectionSaibaMais()">Saiba mais</button>
                     </div>
                 </div>
                 
@@ -38,7 +38,7 @@
 
         
 
-        <section class="section-2">
+        <section id="sobre" class="section-2">
             <div class="container-section2">
                 <img src="./assets/vita-step-to-step.png" alt="">
                 <div class="section-2-content">
@@ -49,14 +49,14 @@
                         Desenvolvemos softwares de ponta a ponta, trazendo uma melhor experiência para o usuário.
                         Acreditamos que inovação pode mudar o mundo.
                     </div>
-                    <button>
+                    <button onclick="irSectionContato()">
                         Entrar em contato
                     </button>
                 </div>
             </div>
         </section>
 
-        <section class="section-product">
+        <section id="case" class="section-product">
             <div class="container-section-product">
                 <img src="./assets/analytics.svg">
                 <div class="section-product-content">
@@ -72,7 +72,7 @@
                         hospitalar traz um diferencial para os hospitais que querem evitar esses problemas comuns.
                     </div>
 
-                    <button onclick="irContato()">
+                    <button onclick="irCase()">
                         Juntar-se
                     </button>
                 </div>
@@ -92,40 +92,73 @@
             <div class="container-integrantes-column">
                 <div class="container-integrantes-row">
                     <div class="div-integrante">
-                        <img src="./assets/integrantes/leo 1.svg" alt="">
+                        <img src="./assets/integrantes/leo_img.svg" alt="">
                         <div class="nome-integrante">Leonardo Bento</div>
-                        <!-- <div class="cargo-integrante">Desenvolvedor de software</div> -->
+                        <div class="cargo-integrante">Founder, Full-Stack Developer</div>
                     </div>
                     <div class="div-integrante">
-                        <img src="./assets/integrantes/leo 1.svg" alt="">
+                        <img src="./assets/integrantes/lucas_img.jpeg" alt="">
                         <div class="nome-integrante">Lucas Santos</div>
-                        <!-- <div class="cargo-integrante">Desenvolvedor de software</div> -->
+                        <div class="cargo-integrante">Founder, Full-Stack Developer</div>
                     </div>
                     <div class="div-integrante">
-                        <img src="./assets/integrantes/leo 1.svg" alt="">
+                        <img src="./assets/integrantes/david_img.jpg" alt="">
                         <div class="nome-integrante">David Nicolas</div>
-                        <!-- <div class="cargo-integrante">Desenvolvedor de software</div> -->
+                        <div class="cargo-integrante">Founder, Full-Stack Developer</div>
                     </div>
 
                 </div>
                 <div class="container-integrantes-row">
                     <div class="div-integrante">
-                        <img src="./assets/integrantes/leo 1.svg" alt="">
+                        <img src="./assets/integrantes/jessica_img.jpg" alt="">
                         <div class="nome-integrante">Jéssica Barreiros</div>
-                        <!-- <div class="cargo-integrante">Desenvolvedor de software</div> -->
+                        <div class="cargo-integrante">Founder, PMO & Negócios</div>
                     </div>
                     <div class="div-integrante">
-                        <img src="./assets/integrantes/leo 1.svg" alt="">
+                        <img src="./assets/integrantes/leo_img.svg" alt="">
                         <div class="nome-integrante">Vitor Lopes</div>
-                        <!-- <div class="cargo-integrante">Desenvolvedor de software</div> -->
+                        <div class="cargo-integrante">Founder, Full-Stack Developer</div>
                     </div>
                     <div class="div-integrante">
-                        <img src="./assets/integrantes/leo 1.svg" alt="">
+                        <img src="./assets/integrantes/leo_img.svg" alt="">
                         <div class="nome-integrante">Keven Nascimento</div>
-                        <!-- <div class="cargo-integrante">Desenvolvedor de software</div> -->
+                        <div class="cargo-integrante">Founder, Database Manager</div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section id="contato" class="section-contact">
+                <div class="container-section-contact">
+                    <img src="./assets/contact-asset.png"> 
+                    <div class="section-contact-content">
+                        <form action="" class="form-contact">
+                            <div class="section-contact-title">Contato</div>
+        
+                            <label for="" class="label-contact">Nome completo*</label>
+                            <input class="input-contact" id="ipt_nome_completo" minlength="2" maxlength="100" required>
+        
+                            <label for="" class="label-contact">Email*</label>
+                            <input class="input-contact" id="ipt_email" minlength="6" maxlength="150" required>
+        
+                            <label for="" class="label-contact">CPF/CNPJ*</label>
+                            <input class="input-contact" type="number" id="ipt_cnpj_cpf" minlength="11" maxlength="14" required>
+        
+                            <label for="" class="label-contact">Produto*</label>
+                            <select class="input-contact" id="select_product">
+                                <option value="none" disabled>Selecione o produto...</option>
+                                <option value="idleCare">idleCare</option>
+                            </select>
+        
+                            <label for="" class="label-contact">Mensagem*</label>
+                            <textarea class="input-contact" id="ipt_mensagem" maxlength="500" rows="4" cols="50"></textarea>
+                        </form>
+    
+                        <button onclick="contatar()">
+                            Pedir solução
+                        </button>
+                    </div>
+                </div>
         </section>
     </main>
 
@@ -134,3 +167,35 @@
 </body>
 
 </html>
+
+<script>
+    function irSectionCase() {
+        window.location.href = "./index.html#case";
+    }
+
+    function irSectionSaibaMais() {
+        window.location.href = "./index.html#sobre";
+    }
+
+    function irSectionContato() {
+        window.location.href = "./index.html#contato";
+    }
+
+    function irCase() {
+        window.location.href = "#";
+    }
+
+    function contatar() {
+        let nome_completo = document.getElementById("ipt_nome_completo").value;
+        let email = document.getElementById("ipt_email").value;
+        let cnpj_cpf = document.getElementById("ipt_cnpj_cpf").value;
+        let produto = document.getElementById("select_product").value;
+        let mensagem = document.getElementById("ipt_mensagem").value;
+
+        if (!nome_completo || !email || !cnpj_cpf || !produto == 'none' || !mensagem) {
+            alert("Preencha todos os campos!");
+        } else {
+            alert("Mensagem enviada com sucesso!");
+        }
+    }
+</script>
