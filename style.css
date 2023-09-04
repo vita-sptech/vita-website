@@ -158,7 +158,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 5vh;
+    overflow-x: hidden;
 }
 
 .integrantes-informacao{
@@ -168,6 +168,7 @@
     width: 30%;
     text-align: left;
     font-size: 20px;
+
 }
 
 .integrantes-informacao h2{
@@ -176,30 +177,26 @@
     font-size: 28px
 }
 .container-integrantes-column{
-
-    /* border: 1px rgb(222, 43, 43) solid; */
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     padding: 20px;
     width: 70vw;
     height: 70vh;
 }
 
 .container-integrantes-row{
-    /* border: 1px rgb(8, 158, 33) solid; */
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 2rem;
     flex-direction: row;
-    height: 40%;
+    height: 50%;
     padding: 10px;
 }
 
 .div-integrante{
-    /* border: 1px black solid; */
     width: 25%;
     display: flex;
     flex-direction: column;
