@@ -320,7 +320,7 @@ html {
     background-image: linear-gradient(90deg, #F0B86E, #A280EC);
     font-weight: 600;
     cursor: pointer;
-    transition: .2s
+    transition: .2s;
 }
 
 .section-contact-content button:hover{
@@ -349,14 +349,22 @@ html {
 
 .label-contact {
     color: #F3F5FB;
+    font-size: 1.1rem;
 }
 
 .input-contact {
     background-color: #F3F5FB;
-    border: 1px solid #A280EC;
     border-radius: 10px;
     width: 100%;
     height: 34px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5px;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    color: #002B5B;
 }
 
 .input-contact, select {
