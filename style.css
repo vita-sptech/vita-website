@@ -248,10 +248,10 @@ html {
 .section-product-content button{
     max-width: fit-content;
     padding: 14px 44px 14px 44px;
-    border: none;
+    border: 2px solid #2B4865;
     border-radius: 28px;
     color: #2B4865;
-    background-image: linear-gradient(90deg, #F0B86E, #A280EC);
+    background-color: white;
     font-weight: 600;
     cursor: pointer;
     transition: .2s
@@ -314,10 +314,10 @@ html {
 .section-contact-content button{
     max-width: fit-content;
     padding: 14px 44px 14px 44px;
-    border: none;
+    border: 2px solid #2B4865;
     border-radius: 28px;
     color: #2B4865;
-    background-image: linear-gradient(90deg, #F0B86E, #A280EC);
+    background-color: white;
     font-weight: 600;
     cursor: pointer;
     transition: .2s;
@@ -371,8 +371,9 @@ html {
     padding: 5px;
 }
 .footer-logo{
+    width: 18%;
     margin-top: 2rem;
-    width: 4%;
+
     margin-left: 56px;
 }
 
@@ -389,7 +390,7 @@ html {
     margin-left: 20px;
     left: 51px;
     position: relative;
-    margin-top: 37px;
+    margin-top: 30px;
 }
 
 .footer-link{
