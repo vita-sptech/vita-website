@@ -370,3 +370,83 @@ html {
 .input-contact, select {
     padding: 5px;
 }
+.footer-logo{
+    margin-top: 2rem;
+    width: 4%;
+    margin-left: 56px;
+}
+
+.footer-name-logo{
+    display: flex;
+    margin-top: -2.5rem;
+    left: 130px;
+    position: relative;
+    font-size: 25px;
+}
+
+.fa-brands, .fab{
+    font-size: 30px;
+    margin-left: 20px;
+    left: 51px;
+    position: relative;
+    margin-top: 37px;
+}
+
+.footer-link{
+    display: flex;
+    margin-top: -6.1rem;
+    left: 526px;
+    position: relative;
+    font-size: 25px;
+}
+
+.footer-link-topics{
+    text-decoration: none;
+    color: #000000;
+    left: 267px;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    line-height: 2rem;
+}
+
+.footer-contact{
+    display: flex;
+    margin-top: -13.100000000000001rem;
+    left: 972px;
+    position: relative;
+    font-size: 25px;
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+    font-size: 25px;
+    left: 916px;
+    position: relative;
+    margin-top: 17px;
+}
+
+.address{
+    position: relative;
+    margin-top: -24px;
+    left: 954px;
+}
+
+.footer-email{
+    position: relative;
+    margin-top: -24px;
+    left: 954px; 
+}
+
+.footer-phone{
+    position: relative;
+    margin-top: -24px;
+    left: 954px;
+}
+
+.footer-right{
+    text-align: center;
+    margin-top: 41px;
+    background: whitesmoke;
+    padding: 16px;
+}
