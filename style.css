@@ -45,6 +45,9 @@ nav{
 nav img{
     width: 8%;
 }
+.center-div{
+    width: 8%;
+}
 nav ul {
     display: flex;
     gap: 1rem;
