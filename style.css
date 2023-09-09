@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
     font-family: 'Montserrat';
 }
 
@@ -51,6 +50,7 @@ nav img{
 nav ul {
     display: flex;
     gap: 1rem;
+    list-style: none;
 }
 
 nav ul a{

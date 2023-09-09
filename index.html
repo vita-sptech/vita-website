@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vita.</title>
     <link rel="shortcut icon" href="./assets/identidade-visual/Vita_favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,37 +20,45 @@
             <img src="./assets/identidade-visual/VitaHealth.png" alt="">
             <div>
                 <ul>
-                    <a href="#index"><li>Início</li></a>
-                    <a href="#sobre"><li>Sobre</li></a>
-                    <a href="#case"><li>Case</li></a>
-                    <a href="#contato"><li>Contato</li></a>
+                    <a href="#index">
+                        <li>Início</li>
+                    </a>
+                    <a href="#sobre">
+                        <li>Sobre</li>
+                    </a>
+                    <a href="#case">
+                        <li>Case</li>
+                    </a>
+                    <a href="#contato">
+                        <li>Contato</li>
+                    </a>
                 </ul>
             </div>
             <div class="center-div"></div>
         </nav>
-            <section id="introducao" class="section-introducao">
-                <div class="introducao-container">
-                    <div class="introducao-subtext">Tecnologia, inovação e saúde
-                        <span class="bottom-line"></span>
-                    </div>
-    
-                    <div class="introducao-title">Desenvolvendo soluções que mudam vidas</div>
-    
-                    <div class="introducao-subtitle">
-                        Nós trabalhamos com inovação e tecnologia na área da saúde, conheça mais sobre nós.
-                    </div>
-    
-                    <div class="introducao-buttons">
-                        <button id="btn-start" onclick="irSectionCase()">Principal case</button>
-                        <button id="btn-learn" onclick="irSectionSaibaMais()">Saiba mais</button>
-                    </div>
+        <section id="introducao" class="section-introducao">
+            <div class="introducao-container">
+                <div class="introducao-subtext">Tecnologia, inovação e saúde
+                    <span class="bottom-line"></span>
                 </div>
-                
 
-                <img src="assets/vita-component.png" class="" alt="">
-            </section>
+                <div class="introducao-title">Desenvolvendo soluções que mudam vidas</div>
 
-        
+                <div class="introducao-subtitle">
+                    Nós trabalhamos com inovação e tecnologia na área da saúde, conheça mais sobre nós.
+                </div>
+
+                <div class="introducao-buttons">
+                    <button id="btn-start" onclick="irSectionCase()">Principal case</button>
+                    <button id="btn-learn" onclick="irSectionSaibaMais()">Saiba mais</button>
+                </div>
+            </div>
+
+
+            <img src="assets/vita-component.png" class="" alt="">
+        </section>
+
+
 
         <section id="sobre" class="section-2">
             <div class="container-section2">
@@ -75,7 +85,8 @@
                     <div class="section-product-title">idleCare</div>
 
                     <div class="section-product-text">
-                        Fato que hardwares podem se tornar um problema em ambientes que precisam de <b>fast services</b>, visto
+                        Fato que hardwares podem se tornar um problema em ambientes que precisam de <b>fast
+                            services</b>, visto
                         que é preciso evitar filas e ter um atendimento eficiente para o paciente.
                     </div>
 
@@ -141,36 +152,37 @@
         </section>
 
         <section id="contato" class="section-contact">
-                <div class="container-section-contact">
-                    <img src="./assets/contact-asset.png"> 
-                    <div class="section-contact-content">
-                        <form action="" class="form-contact">
-                            <div class="section-contact-title">Contato</div>
-        
-                            <label for="" class="label-contact">Nome completo*</label>
-                            <input class="input-contact" id="ipt_nome_completo" minlength="2" maxlength="100" required>
-        
-                            <label for="" class="label-contact">Email*</label>
-                            <input class="input-contact" id="ipt_email" minlength="6" maxlength="150" required>
-        
-                            <label for="" class="label-contact">CPF/CNPJ*</label>
-                            <input class="input-contact" type="number" id="ipt_cnpj_cpf" minlength="11" maxlength="14" required>
-        
-                            <label for="" class="label-contact">Produto*</label>
-                            <select class="input-contact" id="select_product">
-                                <option value="none" disabled>Selecione o produto...</option>
-                                <option value="idleCare">idleCare</option>
-                            </select>
-        
-                            <label for="" class="label-contact">Mensagem*</label>
-                            <textarea class="input-contact" id="ipt_mensagem" maxlength="500" rows="4" cols="50"></textarea>
-                        </form>
-    
-                        <button onclick="contatar()">
-                            Pedir solução
-                        </button>
-                    </div>
+            <div class="container-section-contact">
+                <img src="./assets/contact-asset.png">
+                <div class="section-contact-content">
+                    <form action="" class="form-contact">
+                        <div class="section-contact-title">Contato</div>
+
+                        <label for="" class="label-contact">Nome completo*</label>
+                        <input class="input-contact" id="ipt_nome_completo" minlength="2" maxlength="100" required>
+
+                        <label for="" class="label-contact">Email*</label>
+                        <input class="input-contact" id="ipt_email" minlength="6" maxlength="150" required>
+
+                        <label for="" class="label-contact">CPF/CNPJ*</label>
+                        <input class="input-contact" type="number" id="ipt_cnpj_cpf" minlength="11" maxlength="14"
+                            required>
+
+                        <label for="" class="label-contact">Produto*</label>
+                        <select class="input-contact" id="select_product">
+                            <option value="none" disabled>Selecione o produto...</option>
+                            <option value="idleCare">idleCare</option>
+                        </select>
+
+                        <label for="" class="label-contact">Mensagem*</label>
+                        <textarea class="input-contact" id="ipt_mensagem" maxlength="500" rows="4" cols="50"></textarea>
+                    </form>
+
+                    <button onclick="contatar()">
+                        Pedir solução
+                    </button>
                 </div>
+            </div>
         </section>
     </main>
 
@@ -178,7 +190,7 @@
 
     <section class="footer">
         <div><a href="#introducao"><img class="footer-logo" src="./assets/identidade-visual/VitaHealth.png"></a></div>
-        
+
         <a href="https://instagram.com" style="color: #2B4865;"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://linkedin.com" style="color: #2B4865;"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://medium.com" style="color: #2B4865;"><i class="fa-brands fa-medium"></i></a>
@@ -201,43 +213,13 @@
         <i style="color: #2B4865;" class="fa-solid fa-phone"></i>
         <div class="footer-phone"> ++55 (11) 12345-5678</div>
         <div class="footer-right">© 2023 Copyright: vitahealth.com</div>
-        
-    </selection>
 
-    
+        </selection>
+
+
 
 </body>
 
 </html>
 
-<script>
-    function irSectionCase() {
-        window.location.href = "./index.html#case";
-    }
-
-    function irSectionSaibaMais() {
-        window.location.href = "./index.html#sobre";
-    }
-
-    function irSectionContato() {
-        window.location.href = "./index.html#contato";
-    }
-
-    function irCase() {
-        window.location.href = "#";
-    }
-
-    function contatar() {
-        let nome_completo = document.getElementById("ipt_nome_completo").value;
-        let email = document.getElementById("ipt_email").value;
-        let cnpj_cpf = document.getElementById("ipt_cnpj_cpf").value;
-        let produto = document.getElementById("select_product").value;
-        let mensagem = document.getElementById("ipt_mensagem").value;
-
-        if (!nome_completo || !email || !cnpj_cpf || !produto == 'none' || !mensagem) {
-            alert("Preencha todos os campos!");
-        } else {
-            alert("Mensagem enviada com sucesso!");
-        }
-    }
-</script>
+<script src="./script.js"></script>
