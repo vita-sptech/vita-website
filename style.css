@@ -674,3 +674,160 @@ nav ul li:hover{
         margin-bottom: 30px;
     }
 }
+
+
+@media (max-width: 425px){
+    .imagem-responsiva{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .imagem-responsiva img{
+        width: 250px;
+        margin-top: 30px;
+    }
+
+    .introducao-container{
+        padding-left: 2rem;
+        width: 100%;
+    }
+
+    .section-introducao{
+        height: 70vh;
+    }
+
+    .section-introducao .introducao-buttons{
+        padding: 0px;
+    }
+
+    .section-introducao .introducao-buttons #btn-start{
+        width: 120px;
+    }
+
+    .section-introducao .introducao-buttons #btn-learn{
+        width: 120px;
+    }
+
+    .section-2-title{
+        font-size: 22px;
+    }
+
+    .section-2-text{
+        font-size: 16px;
+    }
+
+    .section-introducao img{
+        display: none;
+    }
+
+    .nav-container{
+        display: none;
+    }
+
+    .section-introducao .introducao-title{
+        width: 80vw;
+        font-size: 28px;
+    }
+
+    .section-introducao .introducao-subtitle{
+        width: 80vw;
+        font-size: 18px;
+    }
+
+    .section-2{
+        height: 80vh;
+    }
+
+    .container-section2 img{
+        display: none;
+    }
+
+    .section-2-content{
+        max-width: 100vw;
+    }
+
+    .section-product{
+        height: 120vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-product-title{
+        padding-top: 2rem;
+        font-size: 36px;
+    }
+
+    .section-product-text{
+        font-size: 18px;
+    }
+
+    .container-section-product{
+        width: 80%;
+    }
+
+    .container-section-product img{
+        display: none;
+    }
+
+    .section-integrantes{
+        height: 125vh;
+    }
+
+    .integrantes-text{
+        font-size: 16px;
+    }
+
+    .integrantes-informacao{
+        width: 80%;
+    }
+
+    .div-integrante img{
+        width: 60px;
+    }
+
+    .nome-integrante{
+        font-size: 16px;
+    }
+
+    .cargo-integrante{
+        font-size: 12px;
+    }
+
+    .container-integrantes-column{
+        width: 80vw;
+    }
+    
+
+    .container-section-contact img{
+        display: none;
+    }
+
+    .section-contact-content{
+        width: 70%;
+    }
+
+    .section-contact-title{
+        font-size: 36px;
+    }
+    .label-contact{
+        margin-top: 5px;
+        font-size: 1rem;
+    }
+
+    .footer{
+        height: 120vh;
+    }
+
+    .footer .container{
+        flex-direction: column;
+    }
+
+    .footer .vita-icons{
+        margin-bottom: 30px;
+    }
+
+    .footer .footer-nav{
+        margin-bottom: 30px;
+    }
+}
